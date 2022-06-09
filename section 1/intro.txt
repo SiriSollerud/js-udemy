@@ -1,0 +1,47 @@
+How does a webpage work?
+user -> client(browser) -> request to server 
+                        <- HTML response from server to client
+
+How is js executed?
+your code -> js engine -> effect on webpage
+    js engine (done in browser) - happens on a single thread
+    - parse code
+    - compile to machine code
+    - execue machine code
+
+js is...
+- dynamic = not pre-compiled instead parsed and compiled 
+            "on the fly" (in broswer)
+    - code evaluted and executed at runtime
+    - code can change at runtime (ex: type of a variable)
+- weakly typed = data types are assumed (assigned to variables) automatically
+    - you don't define the data type
+    - data types are not set in stone but can change 
+
+js runs on a host environment
+types of environments:
+- browser-side
+    - js was invented to create more dynamic websites by executing in the browser
+    - js can manipulate the HTML code, CSS, send background 
+      HTTP requests and much more
+    - js CAN'T access the local filesystem, interact with the OS etc.
+- "other" (server-side)
+    - google's js engine (V8) was extracted to run js anywhere
+        **called Node.js**
+    - Node.js can be executed on any machine and is therefore often used
+      to build web backends (server-side js)
+    - Node.js CAN access the local filesystem, interact with the OS
+    - Node.js CAN'T manipulate HTml or CSS
+
+java vs. js
+- java does NOT run in the browser -> js does
+
+client-side(browser)
+- the origin of js 
+- allows interaction with werb page and broswer APIs (ex: get user location)
+server-side(NodeJS)
+- special non-browswer APIs (ex: to work w/file system, incoming HTTP reqests. etc)
+
+
+visual studio code shortcuts:
+formatting: shift alt f

@@ -1,0 +1,15 @@
+let variableName = 'poop'
+variableName = 'peep'
+const cannotChange = 12
+cannotChange = 12 <-- error!
+
+
+defer and async used on external scripts - not used on internal scripts!
+
+defer - executes after parsing (guaranteed script execution order)
+<script src="assets/scripts/vendor.js" defer></script>
+<script src="assets/scripts/app.js" defer></script>
+
+async - executes as early as possible (order of script execution is not guaranteed)
+<script src="assets/scripts/vendor.js" async></script>
+<script src="assets/scripts/app.js" async></script>

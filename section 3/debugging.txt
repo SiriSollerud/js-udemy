@@ -1,0 +1,7 @@
+console.log('INPUT', enteredNumner, currentResult);
+
+inspect --> sources --> app.js --> 
+    breakpoints
+        conditional breakpoints
+        mouse --> check click
+    watch
